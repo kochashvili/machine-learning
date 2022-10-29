@@ -29,8 +29,8 @@ algo2 = GaussianNB(priors=[0.3, 0.7])
 algo1.fit(X_train, y_train)
 algo2.fit(X_train, y_train)
 
-print(algo1.score(X_test))
-print(algo2.score(y_test))
+print(algo1.score(X_test, y_test))
+print(algo2.score(X_test, y_test))
 
 
 
